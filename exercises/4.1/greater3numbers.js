@@ -1,6 +1,6 @@
-let a = 10;
-let b = 7;
-let c = 17
+let a = 1;
+let b = 107;
+let c = 7
 
 if (a > b && a > c){
     console.log('Este é o numero:', a );
