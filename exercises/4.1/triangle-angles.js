@@ -2,11 +2,11 @@ let angle1 = 60;
 let angle2 = 30;
 let angle3 = 90;
 
-result = true;
-sum = angle1 + angle2 +angle3;
+let result = true;
+let sum = angle1 + angle2 +angle3;
 const triangle = 180;
 
-if (sum == triangle){
+if (sum === triangle){
     console.log(result);
 }
 else {
