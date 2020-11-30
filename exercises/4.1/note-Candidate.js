@@ -1,13 +1,19 @@
-let note = 59;
+let estado = 'Lista';
 
-if (note >= 80) {
-    console.log('Parabéns, você foi aprovado');
-}
+switch (estado) {
+    case 'Aprovado':
+        console.log('Parabéns, APROVADO!');
+        break;
 
-else if (note < 80 && note >=60) {
-    console.log('Você está na lista de espera');
-}
+    case 'Lista':
+        console.log('Você ingressou em nossa LISTA!');
+        break;
 
-else {
-    console.log('Você foi reprovado');
+    case 'Reprovado':
+        console.log('Parabéns, REPROVADO!');
+        break;
+
+    default:
+        console.log('Não se aplica.');
+
 }
