@@ -1,14 +1,29 @@
-let note = 90;
+let note = 100;
 
-switch(note){
-    case (>= 90):
-        console.log("Conceito A");
-        break;
+if (note >= 90 && note <= 100) {
+    console.log("Conceito A");
+} 
 
-    case (>=80):
-        console.log("Conceito B");
-        break; 
+else if (note >= 80 && note <= 89) {
+    console.log("Conceito B");
+}
 
-    default:
-        console.log();
+else if (note >= 70 && note <= 79) {
+    console.log("Conceito C");
+} 
+
+else if (note >= 60 && note <= 69) {
+    console.log("Conceito D");
+} 
+
+else if (note >= 50 && note <= 59) {
+    console.log("Conceito E");
+} 
+
+else if (note >= 0 && note <= 49) {
+    console.log("Conceito F");
+}
+
+else {
+    console.log("Nota inadequada.");
 }
