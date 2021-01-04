@@ -9,4 +9,7 @@ let info = {
   info['recorrente'] = 'Sim';
 
   console.table(info);
-  
+
+  for (let index in info) {
+      console.log(info[index]);
+  }
