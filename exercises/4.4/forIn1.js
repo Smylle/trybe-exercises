@@ -5,4 +5,8 @@ let info = {
   };
 
   console.log("Bem-vinda,", info.personagem);
+
+  info['recorrente'] = 'Sim';
+
+  console.table(info);
   
