@@ -10,6 +10,12 @@ let info = {
 
   console.table(info);
 
+  for (let key in info) {
+    console.log(key);
+}
+
+console.log('');
+
   for (let index in info) {
       console.log(info[index]);
   }
