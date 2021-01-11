@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 id="page-title">Título</h2>
+    <p id="paragraph">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p id="second-paragraph">Segundo parágrafo!</p>
+
+    <script>
+      var paragraph = document.querySelector("#paragraph");
+      paragraph.style.color = "red";
+
+      document.querySelector('#page-title').innerHTML = 'Lord of the Rings';
+
+      document.querySelector('#second-paragraph').innerText = 'The best book and movie of the world ever.';
+
+      document.querySelector('#subtitle').innerText = 'DESCRIPTION';
+
+      document.querySelectorAll('p')[0].style.color = 'white';
+      document.querySelectorAll('p')[0].style.backgroundColor = 'gray';
+      document.querySelectorAll('p')[1].style.color = 'red';
+      document.querySelectorAll('p')[1].style.backgroundColor = 'lightblue';
+
+      document.querySelector('p').className = 'paragrafo';
+      document.querySelectorAll('p')[1].className = 'paragrafo';
+
+      let paragrafo = document.querySelectorAll('.paragrafo');
+      paragrafo[0].style.backgroundColor = 'black';
+
+      let subtitulo = document.querySelector('h4');
+      subtitulo.style.color = 'green';
+
+    </script>
+  </body>
+</html>
