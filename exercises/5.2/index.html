@@ -20,17 +20,23 @@
     </div>
   </div>
   <script>
-      let elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta').parentNode;
-      elementoOndeVoceEsta.style.color = 'gray';
-      let primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
-      primeiroFilhoDoFilho.innerText = 'Oi, eu sou o Goku! =D';
-      document.querySelector('#pai').firstElementChild;
-      document.querySelector('#elementoOndeVoceEsta').parentNode.firstElementChild;
-      document.querySelector('#elementoOndeVoceEsta').parentNode.firstChild;
-      document.querySelector('#elementoOndeVoceEsta').nextElementSibling;
-      document.querySelector('#pai').lastElementChild.previousElementSibling;
+    let irmao = document.querySelector('#pai');
+    let createIrmao = document.createElement('div');
+    createIrmao.innerText = ''; // criei o div mas não o coloquei no HTML.
+    irmao.appendChild(createIrmao); //adicionei a div criada ao meu HTML
+    document.querySelector('#pai').lastChild.id = 'irmaoElementoOndeVoceEsta';
 
+    let elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
+    let filhoElementoOndeVoceEsta = document.createElement('div');
+    elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
+    elementoOndeVoceEsta.lastChild.id = 'filhoElementoOndeVoceEsta';
 
+    let primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+    let filhoDoPrimeiroFilhoDoFilho = document.createElement('div');
+    primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
+    filhoDoPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
+
+    document.querySelector('#filhoDoPrimeiroFilhoDoFilho').parentNode.parentNode.parentNode.children[2];
 
   </script>
 </body>
