@@ -38,7 +38,14 @@
 
     document.querySelector('#filhoDoPrimeiroFilhoDoFilho').parentNode.parentNode.parentNode.children[2];
 
-    
+   let alldivs = document.querySelectorAll('div');
+
+   for (let index = 0; index < alldivs.length; index += 1) {
+     const element = alldivs[index];
+     if (index !== 0 && index !== 1 && index !== 3 && index !== 4) {
+    element.remove();    
+     }
+   }
   </script>
 </body>
 </html>
