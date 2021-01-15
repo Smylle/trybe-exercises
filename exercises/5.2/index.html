@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+  <script>
+    let irmao = document.querySelector('#pai');
+    let createIrmao = document.createElement('div');
+    createIrmao.innerText = ''; // criei o div mas não o coloquei no HTML.
+    irmao.appendChild(createIrmao); //adicionei a div criada ao meu HTML
+    document.querySelector('#pai').lastChild.id = 'irmaoElementoOndeVoceEsta';
+
+    let elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
+    let filhoElementoOndeVoceEsta = document.createElement('div');
+    elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
+    elementoOndeVoceEsta.lastChild.id = 'filhoElementoOndeVoceEsta';
+
+    let primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+    let filhoDoPrimeiroFilhoDoFilho = document.createElement('div');
+    primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
+    filhoDoPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
+
+    document.querySelector('#filhoDoPrimeiroFilhoDoFilho').parentNode.parentNode.parentNode.children[2];
+
+   let alldivs = document.querySelectorAll('div');
+
+   for (let index = 0; index < alldivs.length; index += 1) {
+     const element = alldivs[index];
+     if (index !== 0 && index !== 1 && index !== 3 && index !== 4) {
+    element.remove();    
+     }
+   }
+  </script>
+</body>
+</html>
