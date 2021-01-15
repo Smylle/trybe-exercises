@@ -57,7 +57,8 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO
+    // inicio da parte 2 do exercicio
+
     let tagH1 = document.querySelector('body');
     let createTagH1 = document.createElement('h1');
     createTagH1.innerText = 'Exercício 5.2 - JavaScript DOM'; // criei o div mas não o coloquei no HTML.
@@ -104,7 +105,30 @@
       let tresH3 = document.createElement('h3');
       createDivMainContent.appendChild(tresH3);
     }
-    
+
+    // fechamento da parte 1 do exercicio
+
+    // inicio da parte 2 do exercicio
+
+    createTagH1.className = 'title';
+
+    let myH3 = document.querySelectorAll('h3');
+
+    for (let index = 0; index < myH3.length; index += 1) {
+      const element = myH3[index];
+      element.className = 'description'; 
+    }
+
+    createDivMainContent.removeChild(createDivLeftContent);
+
+    createDivRightContent.style.marginRight = 'auto';
+
+    createDivCenterContent.parentNode.style.backgroundColor = 'green';
+
+    list.lastChild.remove();
+    list.lastChild.remove();
+
+
     </script>
   </body>
 </html>
