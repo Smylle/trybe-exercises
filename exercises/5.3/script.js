@@ -40,15 +40,15 @@ const days = document.querySelector('#days');
 createDays();
 // FIM Exercicio 1
 
-function btnHoliday (Feriados) {
+function btnHoliday (feriados) {
     let buttonsContainer = document.querySelector('.buttons-container');
     let feriado = document.createElement('button');
     feriado.id = 'btn-holiday';
-    feriado.innerText = 'Feriados';
+    feriado.innerText = feriados;
     buttonsContainer.appendChild(feriado);
 }
 
-btnHoliday();
+btnHoliday('Feriados');
 // FIM Exercicio 2
 
 function addColorBtn () {
@@ -70,4 +70,14 @@ function addColorBtn () {
 }
 
 addColorBtn();
+// FIM Exercicio 3
 
+function friday (sextaFeira) {
+    let buttonsContainer = document.querySelector('.buttons-container');
+    let sextou = document.createElement('button');
+    sextou.id = 'btn-friday';
+    sextou.innerText = sextaFeira;
+    buttonsContainer.appendChild(sextou);
+}
+
+friday('Sexta-Feira');
