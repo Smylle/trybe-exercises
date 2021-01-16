@@ -138,3 +138,17 @@ function newTaskSpan(task) {
   
   newTaskSpan('Projeto!');
 //   FIM Exercicio 7
+
+
+function newTaskDiv(color) {
+
+    let tasksContainer = document.querySelector('.my-tasks');
+    let newTask = document.createElement('div');
+  
+    newTask.className = 'task';
+    newTask.style.backgroundColor = color;
+    tasksContainer.appendChild(newTask);
+  };
+  
+  newTaskDiv('red');
+// FIM Exercicio 8
