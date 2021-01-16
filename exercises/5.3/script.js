@@ -46,7 +46,28 @@ function btnHoliday (Feriados) {
     feriado.id = 'btn-holiday';
     feriado.innerText = 'Feriados';
     buttonsContainer.appendChild(feriado);
-    console.log(buttonsContainer);
 }
 
 btnHoliday();
+// FIM Exercicio 2
+
+function addColorBtn () {
+    let button = document.querySelector('#btn-holiday');
+    let holidayColor = document.querySelectorAll('.holiday');
+
+    button.addEventListener('click', changeColor);
+
+    function changeColor () {
+        for (let index = 0; index < holidayColor.length; index += 1) {
+            const element = holidayColor[index];
+            if (element.style.backgroundColor === 'lightblue') {
+                element.style.backgroundColor = 'rgb(238,238,238)';
+            } else {
+                element.style.backgroundColor = 'lightblue';
+            }
+        }
+    }
+}
+
+addColorBtn();
+
