@@ -81,3 +81,49 @@ function friday (sextaFeira) {
 }
 
 friday('Sexta-Feira');
+// FIM Exercicio 4
+
+function fridayBtn() {
+    let button = document.querySelector('#btn-friday');
+    let fridayText = document.querySelectorAll('.friday');
+    let dezFridays = [ 4, 11, 18, 25 ];
+
+    button.addEventListener('click', changeText);
+
+    function changeText () {
+        for (let index = 0; index < fridayText.length; index += 1) {
+            const element = fridayText[index];
+            if (element.innerText !== 'Sextou') {
+                element.innerText = 'Sextou';
+            } else {
+                element.innerText = dezFridays[index];
+            }
+        }
+    }
+}
+
+fridayBtn();
+// FIM Exercicio 5
+
+function dayMouseOver() {
+    let days = document.querySelector('#days');
+  
+    days.addEventListener('mouseover', function(event) {
+      event.target.style.fontSize = '30px';
+      event.target.style.fontWeight = '600';
+    })
+  };
+  
+  function dayMouseOut() {
+    let days = document.querySelector('#days');
+  
+    days.addEventListener('mouseout', function(event) {
+      event.target.style.fontWeight = '200';
+      event.target.style.fontSize = '20px';
+    })
+  };
+  
+  dayMouseOver();
+  dayMouseOut();
+//   FIM Exercicio 6
+
