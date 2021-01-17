@@ -6,14 +6,16 @@
     <title>Formulário</title>
 </head>
 <body>
-    <header><h1>Formulário</h1></header>
+<header>
+        <h1>Formulário</h1>
+</header>
     <fieldset>
         <legend>Dados Pessoais</legend>
     <form action="" method="get">
         <label for="text"></label>
-        <textarea name="text" id="text" cols="30" rows="10" maxlength="40" placeholder="digite o texto" required></textarea>
+        <input name="text" id="name" cols="30" rows="10" maxlength="40" placeholder="digite o nome" required></input>
 <br>
-        <input type="email" name="email" id="email" maxlength="50" placeholder="digite o e-mail" required>
+        <input type="email" name="email" id="email" maxlength="50" placeholder="digite o e-mail" autocomplete="off" required>
 <br>
         <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="digite o cpf" required>
 <br>
@@ -24,21 +26,20 @@
         <select name="states" id="states" required>
         </select>
 <br><br>        
-        <label for="house-button">Casa</label>
-        <input type="radio" name="radio-button" id="house-button" required>
-        <label for="apartment-button">Apartamento</label>
-        <input type="radio" name="radio-button" id="apartment-button" required>
+        <label for="radio-button">Tipo de imóvel:</label>
+        <input type="radio" name="radio-button" id="house-button" value="house" required>Casa
+        <input type="radio" name="radio-button" id="apartment-button" value="apartment" required>Apartamento
     </fieldset>
 <br>
     <fieldset>
         <legend>Último Emprego</legend>
-        <textarea name="curriculum" id="curriculum" cols="30" rows="10" maxlength="1000" placeholder="currículo" required></textarea>
+        <textarea name="curriculum" id="curriculum" cols="30" rows="10" maxlength="1000" placeholder="Resumo do currículo" required></textarea>
 <br>
         <input type="text" name="cargo" id="cargo" maxlength="40" placeholder="cargo" required>
 <br>
         <input type="text" name="description-cargo" id="description-cargo" maxlength="500" placeholder="descrição do cargo" required>
 <br>
-        <input type="date" name="date" id="date" required>
+        <input type="text" name="date" id="date" maxlength="10" value="" placeholder="DD/MM/AAAA" required>
 
     </fieldset>
 <br>
