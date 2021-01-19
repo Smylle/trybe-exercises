@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+</head>
+<body>
+<header>
+        <h1 class="title is-1">Formulário</h1>
+</header>
+<br>
+    <form action="" method="get">
+    <fieldset class="field">
+        <legend >Dados Pessoais</legend>
+        <div class="field">
+                <label class="label" for="text">Nome</label>
+                <div class="control">
+                        <input class="input is-primary is-rounded is-focused" name="text" id="name" cols="30" rows="10" maxlength="40" placeholder="digite o nome" required></input>
+                </div>
+        </div>
+
+        <div class="field">
+                <label class="label" for="email">E-mail</label>
+                <div class="control">
+                        <input class="input info-input is-rounded is-focused"" type="email" name="email" id="email" maxlength="50" placeholder="digite o e-mail" autocomplete="off" required>
+                </div>
+        </div>
+        
+        <div class="field">
+                <label class="label" for="cpf">CPF</label>
+                <div class="control">
+                        <input class="input is-danger is-rounded is-focused" type="text" name="cpf" id="cpf" maxlength="11" placeholder="digite o cpf" required>
+                </div>
+        </div>
+
+        <div class="field">
+                <label class="label" for="adress">Endereço</label>
+                <div class="control">
+                        <input class="input info-input is-rounded is-focused" type="text" name="adress" id="adress" maxlength="200" placeholder="digite o endereço" required>
+                </div>
+        </div>
+        
+        <div class="field">
+                <label class="label" for="city">Cidade</label>
+                <div class="control">
+                        <input class="input info-input is-rounded is-focused" type="text" name="city" id="city" maxlength="28" placeholder="digite a cidade" required>
+                </div>
+        </div>
+
+        <div class="label select is-rounded">
+                <select name="states" id="states" required>
+                </select>
+        </div>
+
+       <div class="control">
+               <span class="label">Tipo de imóvel:</span>
+        <label class="radio" for="house-button">
+                <input type="radio" name="radio-button" id="house-button" value="house" required>Casa
+        </label>     
+        <label class="radio" for="apartment-button">
+                <input type="radio" name="radio-button" id="apartment-button" value="apartment" required>Apartamento
+        </label>
+       </div>
+    </fieldset>
+
+    <fieldset class="field">
+        <legend class="label"> Último Emprego</legend>
+        <textarea class="textarea is-success is-rounded is-focused" name="curriculum" id="curriculum" cols="30" rows="10" maxlength="1000" placeholder="Resumo do currículo" required></textarea>
+
+        <div class="field">
+                <label class="label" for="cargo">Cargo</label>
+                <div class="control">
+                        <input class="input is-primary is-rounded is-focused" type="text" name="cargo" id="cargo" maxlength="40" placeholder="cargo" required>
+                </div>
+        </div>
+        
+        <div class="field">
+                <label class="label" for="description-cargo">Descrição do cargo</label>
+                <div class="control">
+                        <input class="input is-primary is-rounded is-focused" type="text" name="description-cargo" id="description-cargo" maxlength="500" placeholder="descrição do cargo" required>
+                </div>
+        </div>
+
+        <div class="field">
+                <label class="label" for="date">Data</label>
+                <div class="control">
+                        <input class="input is-primary is-rounded is-focused" type="text" name="date" id="date" maxlength="10" value="" placeholder="DD/MM/AAAA" required>
+                </div>
+        </div>
+    </fieldset>
+
+    <div class="buttons">
+        <button class="button is-focused is-rounded is-success" type="submit">Validar Formulário</button>
+        <button class="button is-danger is-rounded is-focused" type="reset">Limpar Formulário</button>
+    </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
