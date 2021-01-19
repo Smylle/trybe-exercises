@@ -12,13 +12,4 @@ function createStates () {
 }
 createStates();
 
-function checkDate () {
-    let inputDate = document.querySelector('#date');
-    let date = inputDate.value;
-
-    // if (date !== 'DD/MM/AAAA') {
-    //     alert('Data Inválida!');
-    // }
-}
-checkDate();
-
+document.getElementById('date').DatePickerX.init();
