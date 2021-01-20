@@ -1,0 +1,30 @@
+body {
+
+}
+h1 {
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: x-large;
+        margin: 0 1rem;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    figure {
+        margin: 5px 0;
+    }
+}
