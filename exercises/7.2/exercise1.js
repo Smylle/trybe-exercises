@@ -36,13 +36,6 @@ const order = {
   
   const customerInfo = (order) => {
     // Adicione abaixo as informações necessárias.
-  
-  }
-  
-  customerInfo(order);
-  
-  const orderModifier = (order) => {
-    // Adicione abaixo as informações necessárias.
     const customerInfo = (order) => {
         const address = 'address';
         const deliveryPerson = order.order.delivery.deliveryPerson;
@@ -54,10 +47,34 @@ const order = {
       
         console.log(`Olá ${deliveryPerson}, entrega para: ${customerName}, Telefone: ${customerPhone}, R. ${street}, Nº: ${number}, AP: ${apartment}`);
       }
-
       
       customerInfo(order);
   
+  }
+  
+  customerInfo(order);
+  
+  const orderModifier = (order) => {
+    // Adicione abaixo as informações necessárias.
+    const lesson1 = {
+        materia: 'Matemática',
+        numeroEstudantes: 20,
+        professor: 'Maria Clara',
+        turno: 'manhã',
+      };
+      
+      const lesson2 = {
+        materia: 'História',
+        numeroEstudantes: 20,
+        professor: 'Carlos',
+      };
+      
+      const lesson3 = {
+        materia: 'Matemática',
+        numeroEstudantes: 10,
+        professor: 'Maria Clara',
+        turno: 'noite',
+      };
   }
   
   orderModifier(order);
